@@ -37,4 +37,15 @@ public class binarySort {
 			}
 		}
 	}
+	//add the method that print the result
+	public void inOrder(Node focusNode){
+		
+		if(focusNode!= null){
+			inOrder(focusNode.leftNode);
+			
+			System.out.println(focusNode);
+			
+			inOrder(focusNode.rightNode);
+		}
+	}
 }	
